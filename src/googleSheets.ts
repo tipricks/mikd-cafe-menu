@@ -10,7 +10,7 @@ import { MenuItem } from './types';
 export const SHEET_CONFIG = {
   // Apni Google Sheet ka ID yahan paste karein
   // Example: https://docs.google.com/spreadsheets/d/[YAHAN-HAI-ID]/edit
-  SHEET_ID: 'YOUR_GOOGLE_SHEET_ID_HERE',
+  SHEET_ID: '1Aohh9WKp3oHxhDIPJ4YafhU9JqQpKq6J6Zucaim_DXM',
   
   // Sheet ka naam (default: Sheet1)
   SHEET_NAME: 'Menu',
@@ -71,7 +71,7 @@ function parseGoogleSheetsData(jsonText: string): MenuItem[] {
 
 // Main fetch function
 export async function fetchMenuFromSheet(): Promise<MenuItem[] | null> {
-  if (SHEET_CONFIG.SHEET_ID === 'YOUR_GOOGLE_SHEET_ID_HERE') {
+  if (SHEET_CONFIG.SHEET_ID === '1Aohh9WKp3oHxhDIPJ4YafhU9JqQpKq6J6Zucaim_DXM') {
     return null; // Demo mode
   }
   
